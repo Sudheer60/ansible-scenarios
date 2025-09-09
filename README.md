@@ -53,7 +53,6 @@ ssh-copy-id -f "-o IdentityFile <PATH TO PEM FILE>" ubuntu@<INSTANCE-PUBLIC-IP>
 ```
 ansible-playbook -i inventory.ini ec2_shutdown.yaml --vault-password-file vault.pass
 ```
-Note: inventory.ini file has to be created in the format as specified below prior to the execution of this command.
-Eg: user@<ec2-public-ip>
+Note: inventory.ini file has to be created in the format as specified below prior to the execution of this command. Eg: user@<ec2-public-ip>
 
 
