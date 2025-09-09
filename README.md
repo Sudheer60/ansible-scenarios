@@ -7,7 +7,7 @@
 
 
 # Prerequisites:
-# Setup EC2 Collection and Authentication
+# Setup EC2 Collection and Authentication, SSH Key pair creation
 
 ## Install boto3
 
@@ -34,7 +34,9 @@ openssl rand -base64 2048 > vault.pass
 ```
 ansible-vault create group_vars/all/pass.yml --vault-password-file vault.pass
 ```
+## Create SSH key pair
 
+Create a key pair in AWS. Ensure that the key pair is created in the same region as the one used in the ec2_create.yaml.
 
 # Commands for Task 1
 
